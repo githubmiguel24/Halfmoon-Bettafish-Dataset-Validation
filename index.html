@@ -588,7 +588,14 @@ function render(){
   $("pbar").style.width = (100*pi/total)+"%";
   let h = header();
   if(p.kind==="intro"){
-    h += `<div class="card">
+    h += `<div class="card about">
+      <span class="num">Working Title of the Thesis</span>
+      <h2 style="margin-top:4px;font-size:18px">Uncertainty-Aware Neuro-Symbolic Morphometrics for Rule-Based Halfmoon Longfin Betta Fish Assessment</h2>
+      <p style="margin-top:10px">This form is part of our undergraduate thesis for the BS in Computer Science at the Polytechnic University of the Philippines, College of Computer and Information Sciences. Show bettas are still graded by eye, so results can vary from judge to judge. We are building a system that takes a side-view photo of a Halfmoon Longfin betta, finds 13 anatomical keypoints, and uses them to measure six criteria from the IBC Exhibition Standards (Book 1), such as fin-to-body ratios and caudal spread. Because no measurement from a photo is perfectly exact, the system also estimates its own margin of error, and when a fish is too close to an IBC threshold to call, it defers the decision to a human judge instead of guessing. Your expert review checks that our keypoints and formulas truly follow the IBC standard, which everything else in the system is built on.</p>
+      <p class="num" style="margin-top:14px">Proponents</p>
+      <p style="margin-top:2px;display:flex;flex-wrap:wrap;gap:2px 14px"><span style="white-space:nowrap">Kurt Michael M. Daanay</span><span style="white-space:nowrap">Alexander P. Maraño</span><span style="white-space:nowrap">Charles Miguel L. Trinidad</span><span style="white-space:nowrap">Rogel Cristian S. Verceles</span></p>
+    </div>
+    <div class="card">
       <p>Thank you for helping validate our thesis dataset. It takes about <b>an hour</b> in total, and you can stop at any point and continue later.</p>
       <ol style="margin:10px 0 0;padding-left:20px">
         <li><b>Sections 1–4:</b> read how each keypoint and criterion is defined, and tell us if it follows IBC Book 1.</li>
